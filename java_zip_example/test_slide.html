@@ -1,0 +1,55 @@
+<html>
+
+<head>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  
+  <style type="text/css">
+  .p1{
+    position:relative;
+    width:150px;
+    height:150px;
+    background-color:blue;
+ }
+ .p2{
+    position:absolute;
+    left:-70px;
+    top:50px;
+}
+
+.wing{
+    width:70px;
+    height:50px;
+    background-color:grey;
+    display:none;
+}
+  </style>
+  
+  <script>
+	$(document).ready(function(){
+        
+		$('.p1').click(function(){
+			 $('.p2').toggle("slide", { direction: "right" }, 1500);
+		});
+});
+</script>	
+</head>
+
+<body>
+
+<center>
+<div class="p1" id="a1">
+Stages
+<div class="p2 wing">
+StageInfo
+</div>
+
+</div>
+</center>
+
+
+</body>
+
+
+
+
+</html>
